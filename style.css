@@ -1,0 +1,141 @@
+*{
+    margin: 0px;
+    padding: 0%;
+}
+body{
+    background-color: #0a0c1b;
+}
+.main-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 110px auto;
+    font-family: "Inter", sans-serif;
+    
+   
+
+   
+
+
+}
+.container{
+    /* border-radius: 10px; */
+    width: 90%;
+    min-width: 1000px;
+    display: flex;
+    justify-content: center;
+    /* margin: 90px auto; */
+    border-radius: 10px;
+  
+}
+
+.main-content{
+    width: 40%;
+    background-color: #1c1938;
+    color: white;
+    /* border-radius: 10px; */
+    
+
+}
+.main-content h1{
+     width: 70%;
+     margin: 40px 60px;
+}
+.main-content p{
+    width: 60%;
+    margin: 40px 60px;
+    color: #7a788d
+}
+.main-content span{
+    color: #9c54cb;
+}
+.rateing{
+    display: flex;
+    justify-content: space-between;
+
+    width: 60%;
+    margin: 40px 60px;
+
+}
+.rateing h2{
+    font-size: 25px;
+ 
+    
+}
+.rateing p{
+   margin: 0%;
+   margin-top: 3px;
+}
+.main-img{
+    width: 40%;
+    /* height:55vh; */
+    background-image: url(images/image-header-desktop.jpg);
+    /* background-position: top; */
+     position: relative;
+    
+    background-size:cover;
+    background-repeat: no-repeat;
+    /* height: 30%; */
+
+}
+.main-img::after{
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: #a259d3;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+@media (max-width:450px){
+    .container{
+       
+        min-width: 450px;
+        margin: 0px;
+        flex-direction:  column-reverse;
+        align-items: center;
+    }
+    .main-content{
+        width: 80%;
+        text-align: center;
+    }
+    .main-content p{
+        margin: auto;
+        margin-bottom: 30px;
+        text-align: center;
+        width: 70%;
+    }
+    .main-content h1{
+        width: 70%;
+    }
+    .main-img{
+        background-image: url(images/image-header-mobile.jpg);
+        width: 80%;
+        height:50vh;
+    }
+    .rateing{
+        width: 100%;
+        flex-direction: column;
+        gap: 30px;
+        margin: 40px auto;
+        text-align: center;
+        
+    }
+    .rateing p{
+        margin: 0px;
+        
+    }
+    .rating-one{
+        margin: auto;
+       
+    }
+    .rating-two{
+       margin: auto;
+    }
+    .rating-three{
+       margin: auto;
+    }
+
+}
